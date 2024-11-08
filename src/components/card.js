@@ -18,7 +18,7 @@ export const Card2Example = () => {
           <h2>Nithin Khammampati</h2>
           <h3>Frontend Developer</h3>
           <p>
-            Empowering users through captivating user interfaces, turning ideas
+            Empowering users through captivating interfaces, turning ideas
             into realities.
           </p>
           <div className="buttons">

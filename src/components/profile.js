@@ -66,37 +66,35 @@ export default function Profile() {
 
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-4">
             <div class="px-5 " className="profile-img">
-              <img
-                src={image}
-                class="img-thumbnail d-inline-block rounded-circle py-2 px-2"
-                alt="..."
-              />
+              <div className="profile-img">
+                <img
+                  src={image}
+                  class="img-thumbnail d-inline-block rounded-circle py-2 px-2"
+                  alt="..."
+                />
+              </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-8">
             <div className="name" class="py-5 ">
-              <h1 class="nithin">
-                I'm <span class="text-white">N</span>ithin{" "}
-                <span class="text-white">K</span>hammampati
-              </h1>
-              <h3>Frontend Developer 👋🏾 </h3>
+              <div className="profile-content1">
+                <h1 className="nithin">
+                  I'm <span class="text-white">N</span>ithin {" "}
+                  <span class="text-white">K</span>hammampati
+                </h1>
+                <h3>Frontend Developer 👋🏾 </h3>
+              </div>
+              <p class="py-5 px-5 " className="profile-content">
+                A frontend developer focuses on building the visual and
+                interactive aspects of websites and web applications. They work
+                with core technologies like HTML, CSS, and JavaScript to create
+                layouts, design elements, and user interfaces. Their tasks often
+                include developing responsive websites, ensuring cross-browser
+                compatibility, and implementing basic interactivity. 
+              </p>
             </div>
-            <p></p>
-            <p class="py-5 px-5 " className="profile-content">
-              A frontend developer focuses on building the visual and
-              interactive aspects of websites and web applications. They work
-              with core technologies like HTML, CSS, and JavaScript to create
-              layouts, design elements, and user interfaces. Their tasks often
-              include developing responsive websites, ensuring cross-browser
-              compatibility, and implementing basic interactivity. As they may
-              use tools and libraries like Bootstrap, and React to simplify
-              their work. Strong problem-solving skills and attention to detail
-              are essential as they learn to debug code and enhance user
-              experience. Over time, they expand their knowledge of version
-              control (e.g., Git) and API integration.
-            </p>
           </div>
         </div>
         <div class="py-5 px-5">
