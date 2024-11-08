@@ -112,6 +112,10 @@
   .card-2 p {
     max-width: 400px;
   }
+    .profile-img {
+      height: 35vw;
+      width: 35vw;
+    }
     
 }
 
@@ -120,6 +124,20 @@
   margin: 20px;
 }
 
+@media (width>600px){
+  .profile-img {
+      height: 30vw;
+      width: 30vw;
+    }
+    .info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+}
 @media (width <=420px) {
   .card-2 img {
     height: 50vw;
@@ -127,9 +145,21 @@
     border-radius: 50%;
     margin: -140px 0 30px 0;
   }
-  
+    .profile-img {
+      height: 50vw;
+      width: 50vw;
+      margin-left: 50px;
+    }
+    .name{
+      padding-top: 30px;
+    }
+    .profile-content{
+      padding-top:10px;
+      color:black;
+    }
   
 }
+
 
 #light {
   background-color: #e47226ef;
@@ -158,10 +188,7 @@
 #dark .switch label {
   color: white;
 }
-.profile-img{
-  height: 25vw;
-    width: 25vw;
-}
+
 
 .App {
   font-family: "Ubuntu", sans-serif;

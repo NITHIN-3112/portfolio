@@ -64,34 +64,35 @@ export default function Profile() {
         </div>
       </nav>
 
-      <div class="container">   
-              <div className="profile-img">
-                <img
-                  src={image}
-                  class="img-thumbnail d-inline-block rounded-circle py-2 px-2"
-                  alt="..."
-                />
-              </div>
-         
-            <div className="name">
-              <div className="profile-content1">
-                <h1 className="nithin">
-                  I'm <span class="text-white">N</span>ithin {" "}
-                  <span class="text-white">K</span>hammampati
-                </h1>
-                <h3>Frontend Developer 👋🏾 </h3>
-              </div>
-              <p class="py-5 px-5 " className="profile-content">
-                A frontend developer focuses on building the visual and
-                interactive aspects of websites and web applications. They work
-                with core technologies like HTML, CSS, and JavaScript to create
-                layouts, design elements, and user interfaces. Their tasks often
-                include developing responsive websites, ensuring cross-browser
-                compatibility, and implementing basic interactivity. 
-              </p>
+      <div class="container">
+        <div className="info">
+          <div className="profile-img">
+            <img
+              src={image}
+              class="img-thumbnail d-inline-block rounded-circle py-2 px-2"
+              alt="..."
+            />
+          </div>
+
+          <div className="name">
+            <div className="profile-content1">
+              <h1 className="nithin">
+                I'm <span class="text-white">N</span>ithin{" "}
+                <span class="text-white">K</span>hammampati
+              </h1>
+              <h3>Frontend Developer 👋🏾 </h3>
             </div>
-         
-        
+            <p className="profile-content">
+              A frontend developer focuses on building the visual and
+              interactive aspects of websites and web applications. They work
+              with core technologies like HTML, CSS, and JavaScript to create
+              layouts, design elements, and user interfaces. Their tasks often
+              include developing responsive websites, ensuring cross-browser
+              compatibility, and implementing basic interactivity.
+            </p>
+          </div>
+        </div>
+
         <div class="py-5 px-5">
           <h2 className="side-headings">Programming Languages</h2>
           <ul style={{ marginLeft: "2vw" }}>
