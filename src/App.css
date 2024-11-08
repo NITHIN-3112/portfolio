@@ -1,38 +1,210 @@
-.App {
+.page.card-2-example-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #0cd2d1, #0857c0);
+  color: #fdfcfd;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.card-2 {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 650px;
+  padding: 50px 30px 50px 20px;
+  background: #121017;
+  border-radius: 24px;
+  box-shadow: 0 80px 60px rgb(0 0 0 / 12%);
+}
+
+.card-2 img {
+  max-width: 280px;
+  width: 32vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 12%);
+  transition: border-radius 0.3s;
+}
+
+.card-2 h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 6px;
+}
+
+.card-2 h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  opacity: 0.66;
+}
+
+.card-2 p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.42;
+}
+
+.card-2 .buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.card-2 button {
+  border: 1px solid #f8f8f8;
+  background: transparent;
+  color: #f8f8f8;
+  width: 40%;
+  min-width: 100px;
   text-align: center;
+  font-family: inherit;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-2 button.primary {
+  background: #ffffff;
+  color: #121017;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (width <=600px) {
+  .card-2 {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card-2 .buttons {
+    justify-content: center;
+  }
+
+  .card-2 .buttons button {
+    width: 50%;
+  }
+
+  .card-2 h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card-2 img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+  }
+
+  .card-2 p {
+    max-width: 400px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.prof-h1 {
+  color: black;
+  margin: 20px;
+}
+
+@media (width <=420px) {
+  .card-2 img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+    margin: -140px 0 30px 0;
+  }
+}
+
+#light {
+  background-color: #e47226ef;
+}
+
+#dark {
+  background-color: #46045e;
+}
+
+.switch {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100vw;
+  height: 100px;
+
+
+}
+
+.switch label {
+  margin: 10px;
+}
+
+#light .switch label {
+  color: black;
+}
+
+#dark .switch label {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  font-family: "Ubuntu", sans-serif;
+  width: auto;
+  height: auto;
+  background: linear-gradient(45deg, #0cd2d1, #0857c0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  display: grid;
+  justify-content: end;
+}
+
+/* .image{
+   width: 50px;
+   height: 50px;
+} */
+/* .profile-image{
+  border-color: #121017;
+  border: radius 5px;
+} */
+.profile-content {
+  text-align: justify;
+  font-weight: bold;
+}
+
+.name {
+  position: relative;
+  font-size: 14vw;
+  color: #121017;
+  -webkit-text-stroke: 0.3vw black;
+}
+
+.follow-anchor {
+  text-decoration: none;
+  color: #121017
+}
+
+.hacker-icon {
+  font-size: 24px;
+}
+
+.portfolio {
+  font-weight: bold;
+}
+
+.nithin {
+  font-weight: bold;
+}
+
+.side-headings {
+  font-weight: bold;
 }
