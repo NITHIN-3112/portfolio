@@ -64,10 +64,7 @@ export default function Profile() {
         </div>
       </nav>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <div class="px-5 " className="profile-img">
+      <div class="container">   
               <div className="profile-img">
                 <img
                   src={image}
@@ -75,10 +72,8 @@ export default function Profile() {
                   alt="..."
                 />
               </div>
-            </div>
-          </div>
-          <div class="col-8">
-            <div className="name" class="py-5 ">
+         
+            <div className="name">
               <div className="profile-content1">
                 <h1 className="nithin">
                   I'm <span class="text-white">N</span>ithin {" "}
@@ -95,8 +90,8 @@ export default function Profile() {
                 compatibility, and implementing basic interactivity. 
               </p>
             </div>
-          </div>
-        </div>
+         
+        
         <div class="py-5 px-5">
           <h2 className="side-headings">Programming Languages</h2>
           <ul style={{ marginLeft: "2vw" }}>
